@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.loop-banner {
+  margin: .2rem;
+}
+
+.loop-banner img{
+  width: 100%;
+}
+
+.loop-banner .swiper-pagination {
+  position: relative;
+  top: -50px;
+}
+
+.loop-banner .swiper-container {
+  border-radius: .2rem;
+}
+
+
+.loop-banner .swiper-pagination-bullet {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background: url(../images/index/loop-dot-mobile_2bed20f2c2.png) no-repeat;
+    background-size: auto 8px;
+    cursor: pointer;
+    background-position: 0 0;
+}
+
+swiper-pagination-bullet-active {
+	position:relative;
+	visibility:visible;
+	opacity:1
+}
+
+
+anner .banner-3d-buttons li {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background: url(../img/store/loop-dot-mobile_2bed20f2c2.png) no-repeat;
+    background-size: auto 8px;
+    cursor: pointer;
+    background-position: 0 0;
+}
+    
