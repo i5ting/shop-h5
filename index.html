@@ -10,12 +10,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="node_modules/light7/dist/css/light7.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/light7/dist/css/light7-swiper.min.css">
 
     <link rel="stylesheet" href="stylesheets/index.css"> 
   </head>
   <body>
     <!-- Here is your HTML code-->
+    
+    
     <div class="page">
       <header class="bar bar-nav">
         <a class="icon icon-menu pull-left"></a>
@@ -200,16 +203,36 @@
       </div>
     </div>
     
+    <div class="sss" id='router2' style='display:none;position:relative;width:100%;height:100%;top:44px;background-color:black'>
+      
+          这是ajax 加载的新页面，点击左上角的  按钮返回上一页。
+       
+       <div class="card">
+           <div class="card-header">卡头</div>
+           <div class="card-content">
+             <div class="card-content-inner">头和尾的卡片。卡头是用来显示一些额外的信息，或自定义操作卡标题和页脚。</div>
+           </div>
+           <div class="card-footer">卡脚</div>
+         </div>
+         <div class="card">
+           <div class="card-content">
+             <div class="card-content-inner">这是一个用纯文本的简单卡片。但卡片可以包含自己的页头，页脚，列表视图，图像，和里面的任何元素。</div>
+           </div>
+         </div>
+         
+    </div>
     <script type='text/javascript' src='javascripts/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='node_modules/light7/dist/js/light7.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='node_modules/light7/dist/js/light7-swiper.min.js' charset='utf-8'></script>
 
-     <!-- 
-       <script src="/your-js-file.js"></script>
-        -->
+       <script src="javascripts/fn.js"></script>
+
        <script>
        
        ;(function($){
+         
+
+        
          $.config = {
            autoInit: true //no recommend
          }
@@ -225,6 +248,26 @@
              crossFade: false,
            }
          })
+         var i = 0;
+         $('.icon-menu').on('click', function() {
+           // alert(1)
+           i++;
+           
+           if (i % 2 == 1) {
+           // // $('.page-current').hide()
+             $('#router2').css({'z-index':2005})
+             //addClass('animated slideInDown');
+             //.css({'z-index':2005});
+             
+             $('#router2').slideDown(200)
+           } else {
+             $('#router2').hide().css({'z-index':2})
+           }
+          
+            $('#router2').on('click', function() {
+               $($(this)).hide()
+             })
+           })
        })(Zepto)
        </script>
   </body>

@@ -20,6 +20,14 @@ div{
   float:left;
 }
 
+.bar {
+  background: black;
+}
+
+.bar .title {
+  color: white;
+}
+
 .content {
       background: #ededed;
 }
@@ -211,7 +219,6 @@ swiper-pagination-bullet-active {
     padding: 17px 18px;
     padding: 17px 13px;
 }
-
 
 .footer .siteinfo .nav {
     float: left;
