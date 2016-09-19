@@ -18,16 +18,12 @@
     <!-- Here is your HTML code-->
     <div class="page">
       <header class="bar bar-nav">
-          <a class="button button-link button-nav pull-left back" href="/demos/bar">
-            <span class="icon icon-left"></span>
-            Back
-          </a>
-          <a class="button button-link button-nav pull-right">
-            下一步
-            <span class="icon icon-right"></span>
-          </a>
-          <h1 class="title">StuQ商城</h1>
-        </header>
+        <a class="icon icon-menu pull-left"></a>
+        <a class="icon icon-me pull-right"></a>
+        <a class="icon icon-cart pull-right" style='right: 10px;'></a>
+        <h1 class="title">StuQ商城</h1>
+      </header>
+    
       <!-- <nav class="bar bar-tab">
         <a class="tab-item active" href="#">
           <span class="icon icon-home"></span>
@@ -48,6 +44,7 @@
       </nav> -->
       <div class="content">
         <!-- Content of page -->
+        <div class="back-top active" back-top=""></div>
         <!-- slide -->
         <div class="section loop-banner">
            <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
@@ -176,55 +173,17 @@
         </div>
         
         
-       <div class="container">
+       <div class="footer">
         <div class="siteinfo">
-         <div class="nav">
-          <dl>
-           <dt>
-            <span>订单服务</span>
-            <a href="http://www.smartisan.com/support/#/instruction">订单服务</a>
-           </dt>
-          </dl>
-          <dl>
-           <dt>
-            <span>服务支持</span>
-            <a href="http://www.smartisan.com/support/#/service">服务支持</a>
-           </dt>
-          </dl>
-          <dl>
-           <dt>
-            <span>媒体中心</span>
-            <a href="http://www.smartisan.com/pr/#/news-center">媒体中心</a>
-           </dt>
-          </dl>
-          <dl>
-           <dt>
-            <span>关于公司</span>
-            <a href="http://www.smartisan.com/support/#/about">关于公司</a>
-           </dt>
-          </dl>
-          <dl>
-           <dd>
-            <a href="http://tieba.baidu.com/f?kw=%B4%B8%D7%D3%BF%C6%BC%BC" target="_blank">官方贴吧</a>
-           </dd>
-          </dl>
-         </div>
-         <div class="language-switch">
-          <ul>
-           <li><a class="flag-en" href="http://www.smartisan.com/en/" ng-click="changeLangCookies($event)">English</a></li>
-           <li><a class="flag-jp" href="http://www.smartisan.com/jp/" ng-click="changeLangCookies($event)">日本語</a></li>
-          </ul>
-          <h3><a class="flag-cn" change-language="">中文<span class="smartisan-icon caret-down"></span></a></h3>
-         </div>
+          <span>订单服务</span>
+          <span>服务支持</span>
+          <span>媒体中心</span>
+          <span>关于公司</span>
         </div>
         <div class="copyright">
          <h2>Copyright &copy; <span copyright-year="">2016</span>, Smartisan Digital Co., Ltd. All Rights Reserved.</h2>
          <h3 class="company">北京锤子数码科技有限公司</h3>
-         <ul class="privacy">
-          <li><a href="http://www.smartisan.com/support/#/agreement">法律声明</a></li>
-          <li><a href="http://www.smartisan.com/support/#/privacy">隐私条款</a></li>
-          <li class="devstore"><a href="http://dev.smartisan.com/">开发者中心</a></li>
-         </ul>
+        
          <h4><a href="http://www.miibeian.gov.cn/" target="_blank"><span>京ICP备14041720号-1</span><span>京ICP证140622号</span><span>京公网安备11010502025474</span></a></h4>
         </div>
        </div>

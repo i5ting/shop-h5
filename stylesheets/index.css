@@ -198,30 +198,36 @@ swiper-pagination-bullet-active {
     margin-bottom: 20px;
     border-bottom: 1px solid #eee;
     height: 12px;
+    padding: 16px 0 20px;
+    line-height: 0.5;
 }
 
-.footer .siteinfo {
-    border-bottom: 1px solid #eee;
-    height: 124px;
-    padding: 60px 0 41px;
+.footer {
     position: relative;
+    top: 10px;
+    background: #fafafa;
+    clear: both;
+    border-top: 1px solid #e5e5e5;
+    padding: 17px 18px;
+    padding: 17px 13px;
 }
 
+
+.footer .siteinfo .nav {
+    float: left;
+}
 
 .footer .copyright {
     clear: both;
     color: #434d55;
     font-size: 12px;
-    padding: 39px 0 58px;
-}
-
-
-.footer .copyright {
     padding: 0;
     -webkit-transform: scale(.9);
     transform: scale(.9);
     -webkit-transform-origin: left center;
     transform-origin: left center;
+    top: -15px;
+    position: relative;
 }
 
 .footer .copyright {
@@ -240,59 +246,10 @@ swiper-pagination-bullet-active {
     white-space: nowrap;
 }
 
-
 .footer .copyright h2 {
     float: none;
     margin-top: 0;
     font-size: 12px;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-}
-
-.footer .privacy {
-    margin: 18px 0 0;
-    margin-bottom: 0;
-    border-right: none;
-}
-
-.footer .privacy {
-    float: left;
-    margin: 0 0 0 9px;
-}
-
-.footer:not(.en):not(.jp) .privacy {
-    margin-left: 10px;
-    position: relative;
-}
-
-.footer .privacy li {
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-left: none;
-    line-height: 1.1;
-    margin-bottom: -1px;
-    white-space: nowrap;
-}
-
-.footer .privacy li {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.footer .privacy li {
-    float: left;
-    font-weight: 300;
-    line-height: 12px;
-    padding: 1px 10px 0;
-    border-left: 1px solid #ccc;
 }
 
 .footer .siteinfo .nav {
@@ -305,17 +262,32 @@ h3 {
     padding: 0;
 }
 
-.footer .siteinfo dl {
-    float: left;
+.footer .siteinfo span{
+    font-size: 12px;
+    padding: .5rem;
     line-height: 1;
-    width: 173px;
-}
+    position: relative;
 
+}
 
 .footer .siteinfo dl:first-child dt {
     padding-left: 0;
 }
 
+.footer .siteinfo dl:first-child {
+    margin-left: 0;
+}
+
+.footer .siteinfo dl {
+    margin-left: 20px;
+    width: auto;
+    padding: 0;
+}
+.footer .siteinfo dl {
+    float: left;
+    line-height: 1;
+    width: 173px;
+}
 
 .footer .siteinfo dt span {
     display: none;
@@ -354,4 +326,114 @@ a {
     line-height: 1.1;
     color: #666;
     white-space: nowrap;
+}
+
+/*
+*/
+
+.back-top {
+    display: 'none';
+    position: fixed;
+    right: 17px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    background: url(../images/index/arrow_up_e06a918c6b.png) no-repeat;
+    background-size: contain;
+    opacity: .62;
+    cursor: pointer;
+    z-index: 18;
+    -ms-transform: translate(0,120px);
+    -webkit-transform: translate3d(0,120px,0);
+    transform: translate3d(0,120px,0);
+    -webkit-transition: all .25s cubic-bezier(.215,.61,.355,1);
+    -moz-transition: all .25s cubic-bezier(.215,.61,.355,1);
+    transition: all .25s cubic-bezier(.215,.61,.355,1);
+}
+
+.back-top {
+    right: .2rem;
+    bottom: 50px;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+}
+
+.back-top.active {
+    opacity: 1;
+}
+
+.back-top:hover {
+    opacity: 1;
+}
+
+.back-top.active {
+    display: 'block';
+    -ms-transform: translate(0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.footer .copyright h4 {
+    overflow: hidden;
+    padding-top: 17px;
+    margin-bottom: -2px;
+}
+
+.footer .copyright h4 {
+    clear: both;
+    padding: 10px 0 0;
+}
+
+h4 a {
+    font-size: 11px;
+}
+
+.footer .copyright h4 a {
+    display: inline-block;
+    line-height: 1;
+    font-size: 12px;
+    line-height: 12px;
+    -webkit-transform: scale(.83333333);
+    transform: scale(.83333333);
+    white-space: nowrap;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.footer .copyright h4 a {
+    color: #bdbdbd;
+    font-size: 12px;
+    height: 12px;
+    line-height: 1;
+}
+
+.footer .copyright h4 span {
+    margin-right: 8px;
+}
+
+.footer .copyright h4 span {
+    margin-right: 22px;
+}
+
+.footer .copyright h2 {
+    float: none;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.footer .copyright h2, .footer .copyright h3 {
+    margin-top: 15px;
+    margin-bottom: -1px;
+    height: auto;
+    line-height: 1.1;
+    color: #666;
+    white-space: nowrap;
+}
+
+.footer .copyright h2, .footer .copyright h3 {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    color: #757575;
 }
