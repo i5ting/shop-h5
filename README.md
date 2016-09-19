@@ -2,8 +2,9 @@
 
 ## 技术栈
 
-- http://zeptojs.com/
 - http://light7.cn/
+- http://zeptojs.com/
+- http://www.swiper.com.cn/
 
 ## 参考
 
