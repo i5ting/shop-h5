@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>StuQ商城</title>
+    <title>分类列表</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,54 +17,28 @@
   </head>
   <body>
     <!-- Here is your HTML code-->
-    
-    
     <div class="page">
       <header class="bar bar-nav">
-        <a class="icon icon-menu pull-left"></a>
+        <a class="icon icon-left pull-left" href='/'></a>
         <a class="icon icon-me pull-right"></a>
         <a class="icon icon-cart pull-right" style='right: 10px;'></a>
-        <h1 class="title">StuQ商城</h1>
+        <h1 class="title">分类列表</h1>
       </header>
       <div class="content">
         <!-- Content of page -->
-        <div class="back-top active" back-top=""></div>
-        <!-- slide -->
-        <div class="section loop-banner">
-           <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
-             <div class="swiper-wrapper">
-               <div class="swiper-slide"><img src="images/index/wap-home-0822-banner_93055651da.png" alt=""></div>
-               <div class="swiper-slide"><img src="images/index/wap-home-jiangguofeeling-banner_3a38f476e2.png" alt=""></div>
-               <div class="swiper-slide"><img src="images/index/wap-home-redS1000-banner_c5bc33e847.png" alt=""></div>
-             </div>
-             
-             <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-               <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-               <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
-               <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
-               <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet">
-             </div>
-           </div>
-           
+        <div class="rank_div">
+            <div class="rank_nav button" data_sort="">综合</div>
+            <div class="rank_nav button" data_sort="1">销量
+            </div>
+            <div class="rank_nav button" data_sort="4" style="position:relative">价格
+                
+            </div>
+            <div class="rank_nav button" data_sort="6">最新
+            </div>
+            <div class="clear"></div>
         </div>
-        
-        <!-- intro -->
-        <div class="section2">
-          <ul style='width:50%;float:left;padding:0'>
-            <a href="/category.html" class="">
-             <img src="images/index/1c09d7c990f86a80f20a2fa6fe06758a.png" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
-            </a>
-          </ul>
-          
-          <ul style='width:50%;float:left;left:1%;padding:0'>
-            <a href="/category.html" class="">
-              <img src="images/index/7a8158eec18ef0714a17b0915658c39c.png" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
-            </a>
-          </ul>
-        </div>
-        
         <!-- list -->
-        <div class="content-block-title">当季（秋）推荐</div>
+        <!-- <div class="content-block-title">当季（秋）推荐</div> -->
         <div class="section3">
           <ul class='cell-list'>
             <li class='product'>
@@ -108,69 +82,51 @@
                 <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
               </div>
             </li>
+            <li class='product'>
+              <a href="#" class="">
+               <img src="images/index/cell-3@2x.jpg" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
+              </a>
+              <div class="info">
+                <h6 class="ng-binding">bong2S 心率智能手环</h6>
+                <p ng-if="!promotionInfo[item.currentSku.skuId]" class="ng-binding ng-scope">实时指导运动、全天活动提醒、M4 芯片处理器</p>
+                <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
+              </div>
+            </li>
+            <li class='product'>
+              <a href="#" class="">
+               <img src="images/index/cell-4@2x.jpg" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
+              </a>
+              <div class="info">
+                <h6 class="ng-binding">bong2S 心率智能手环</h6>
+                <p ng-if="!promotionInfo[item.currentSku.skuId]" class="ng-binding ng-scope">实时指导运动、全天活动提醒、M4 芯片处理器</p>
+                <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
+              </div>
+            </li>
+            <li class='product'>
+              <a href="#" class="">
+               <img src="images/index/cell-3@2x.jpg" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
+              </a>
+              <div class="info">
+                <h6 class="ng-binding">bong2S 心率智能手环</h6>
+                <p ng-if="!promotionInfo[item.currentSku.skuId]" class="ng-binding ng-scope">实时指导运动、全天活动提醒、M4 芯片处理器</p>
+                <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
+              </div>
+            </li>
+            <li class='product'>
+              <a href="#" class="">
+               <img src="images/index/cell-4@2x.jpg" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
+              </a>
+              <div class="info">
+                <h6 class="ng-binding">bong2S 心率智能手环</h6>
+                <p ng-if="!promotionInfo[item.currentSku.skuId]" class="ng-binding ng-scope">实时指导运动、全天活动提醒、M4 芯片处理器</p>
+                <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
+              </div>
+            </li>
+            
           </ul>
         </div>
          
-        <!-- list -->
-        <div class="content-block-title">四季歌</div>
-        <div class="section2">
-          <ul style='width:50%;float:left;padding:0'>
-            <a href="#" class="">
-             <img src="images/index/1c09d7c990f86a80f20a2fa6fe06758a.png" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
-            </a>
-          </ul>
-          
-          <ul style='width:50%;float:left;left:1%;padding:0'>
-            <a href="#" class="">
-              <img src="images/index/7a8158eec18ef0714a17b0915658c39c.png" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
-            </a>
-          </ul>
-        
-        </div>
-        
-        <!-- list -->
-        <div class="content-block-title">商城</div>
-        <div class="section3">
-          <ul class='cell-list'>
-            <li class='product'>
-              <a href="#" class="">
-               <img src="images/index/cell-1@2x.jpg" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
-              </a>
-              <div class="info">
-                <h6 class="ng-binding">bong2S 心率智能手环</h6>
-                <p ng-if="!promotionInfo[item.currentSku.skuId]" class="ng-binding ng-scope">实时指导运动、全天活动提醒、M4 芯片处理器</p>
-                <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
-              </div>
-            </li>
-            <li class='product'>
-              <a href="#" class="">
-               <img src="images/index/cell-2@2x.jpg" width="100%" height="100%" alt="1c09d7c990f86a80f20a2fa6fe06758a">
-              </a>
-              
-              <div class="info">
-                <h6 class="ng-binding">bong2S 心率智能手环</h6>
-                <p ng-if="!promotionInfo[item.currentSku.skuId]" class="ng-binding ng-scope">实时指导运动、全天活动提醒、M4 芯片处理器</p>
-                <p class="price"><i>￥</i><span class="ng-binding">129.00</span></p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        
-        
-       <div class="footer">
-        <div class="siteinfo">
-          <span>订单服务</span>
-          <span>服务支持</span>
-          <span>媒体中心</span>
-          <span>关于公司</span>
-        </div>
-        <div class="copyright">
-         <h2>Copyright &copy; <span copyright-year="">2016</span>, Smartisan Digital Co., Ltd. All Rights Reserved.</h2>
-         <h3 class="company">北京锤子数码科技有限公司</h3>
-        
-         <h4><a href="http://www.miibeian.gov.cn/" target="_blank"><span>京ICP备14041720号-1</span><span>京ICP证140622号</span><span>京公网安备11010502025474</span></a></h4>
-        </div>
-       </div>
+ 
         
          <!-- <div class="card">
            <div style="background-image:url(images/index/wap-home-0822-banner_93055651da.png)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
@@ -184,53 +140,7 @@
       </div>
     </div>
     
-    <div class="sss" id='router2' style='display:none;position:relative;width:100%;height:100%;top:44px;background-color:white'>
-      
-       <div class="buttons-tab">
-           <a href="#tab1" class="icon icon-app tab-link active button">
-             精选</a>
-           <a href="#tab2" class="icon icon-gift tab-link button">鲜花</a>
-           <a href="#tab3" class="icon icon-home tab-link button">花园</a>
-           <a href="#tab4" class="icon icon-cart tab-link button">商城</a>
-         </div>
-         <div class="content-block">
-           <div class="tabs">
-             <div id="tab1" class="tab active">
-               <div class="content-block-title">蝴蝶花</div>
-               <div class="content-block">
-                 <p>2016《里》</p>
-               </div>
-             </div>
-             <div id="tab2" class="tab">
-               <div class="content-block-title">四季歌</div>
-               <div class="content-block">
-                 <p>春</p>
-                 <p>夏</p>
-                 <p>秋</p>
-                 <p>冬</p>
-               </div>
-             </div>
-             <div id="tab3" class="tab">
-               <div class="content-block-title">四季歌</div>
-               <div class="content-block">
-                 <p>居所</p>
-                 <p>记忆</p>
-                 <p>光音</p>
-                 <p>折思</p>
-                 <p>其他</p>
-               </div>
-             </div>
-             <div id="tab4" class="tab">
-               <div class="content-block">
-                 <p>佛</p>
-                 <p>道</p>
-               </div>
-             </div>
-           </div>
-         </div>
-         
-         
-    </div>
+   
     <script type='text/javascript' src='javascripts/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='node_modules/light7/dist/js/light7.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='node_modules/light7/dist/js/light7-swiper.min.js' charset='utf-8'></script>

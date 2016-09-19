@@ -445,22 +445,22 @@ h4 a {
     color: #757575;
 }
 
-
-
 .buttons-tab {
     position: relative;
-    background: white;
+    background: #0a140c;
     width: 20%;
-    height: 300px;
+    height: 350px;
     float: left;
     display: block;
-    color: black;
+    color: #0894ec;
     border-bottom:0px;    
+    
 }
 
 .buttons-tab .button {
   padding: 40px 0;
   border-right: 1px dashed yellow;
+  color: #0894ec;
 }
 
 .content-block {
@@ -477,5 +477,28 @@ h4 a {
     z-index: 100;
     color: #0894ec;
     border-color: #0894ec;
-    background: #0a140c;
+    background: white;
 }
+
+.rank_div {
+    width: 100%;
+    height: 25px;
+    left: 0;
+    font-size: 16px;
+    background: #FFFFFF;
+    font-weight: bold;
+    z-index: 99;
+    /* position: fixed; */
+/*    padding-top: 50px;*/
+}
+
+.rank_nav {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #888888;
+    cursor: pointer;
+    font-weight: normal;
+}
+
