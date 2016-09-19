@@ -203,22 +203,51 @@
       </div>
     </div>
     
-    <div class="sss" id='router2' style='display:none;position:relative;width:100%;height:100%;top:44px;background-color:black'>
+    <div class="sss" id='router2' style='display:none;position:relative;width:100%;height:100%;top:44px;background-color:white'>
       
-          这是ajax 加载的新页面，点击左上角的  按钮返回上一页。
-       
-       <div class="card">
-           <div class="card-header">卡头</div>
-           <div class="card-content">
-             <div class="card-content-inner">头和尾的卡片。卡头是用来显示一些额外的信息，或自定义操作卡标题和页脚。</div>
-           </div>
-           <div class="card-footer">卡脚</div>
+       <div class="buttons-tab">
+           <a href="#tab1" class="icon icon-app tab-link active button">
+             精选</a>
+           <a href="#tab2" class="icon icon-gift tab-link button">鲜花</a>
+           <a href="#tab3" class="icon icon-home tab-link button">花园</a>
+           <a href="#tab4" class="icon icon-cart tab-link button">商城</a>
          </div>
-         <div class="card">
-           <div class="card-content">
-             <div class="card-content-inner">这是一个用纯文本的简单卡片。但卡片可以包含自己的页头，页脚，列表视图，图像，和里面的任何元素。</div>
+         <div class="content-block">
+           <div class="tabs">
+             <div id="tab1" class="tab active">
+               <div class="content-block-title">蝴蝶花</div>
+               <div class="content-block">
+                 <p>2016《里》</p>
+               </div>
+             </div>
+             <div id="tab2" class="tab">
+               <div class="content-block-title">四季歌</div>
+               <div class="content-block">
+                 <p>春</p>
+                 <p>夏</p>
+                 <p>秋</p>
+                 <p>冬</p>
+               </div>
+             </div>
+             <div id="tab3" class="tab">
+               <div class="content-block-title">四季歌</div>
+               <div class="content-block">
+                 <p>居所</p>
+                 <p>记忆</p>
+                 <p>光音</p>
+                 <p>折思</p>
+                 <p>其他</p>
+               </div>
+             </div>
+             <div id="tab4" class="tab">
+               <div class="content-block">
+                 <p>佛</p>
+                 <p>道</p>
+               </div>
+             </div>
            </div>
          </div>
+         
          
     </div>
     <script type='text/javascript' src='javascripts/zepto.min.js' charset='utf-8'></script>
@@ -261,10 +290,10 @@
              
              $('#router2').slideDown(200)
            } else {
-             $('#router2').hide().css({'z-index':2})
+             $('#router2').slideUp(200).css({'z-index':2})
            }
           
-            $('#router2').on('click', function() {
+            $('#router2').on('touch', function() {
                $($(this)).hide()
              })
            })

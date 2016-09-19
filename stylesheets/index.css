@@ -444,3 +444,38 @@ h4 a {
     line-height: 15px;
     color: #757575;
 }
+
+
+
+.buttons-tab {
+    position: relative;
+    background: white;
+    width: 20%;
+    height: 300px;
+    float: left;
+    display: block;
+    color: black;
+    border-bottom:0px;    
+}
+
+.buttons-tab .button {
+  padding: 40px 0;
+  border-right: 1px dashed yellow;
+}
+
+.content-block {
+    /* padding: 0 .75rem; */
+    margin:  0; 
+    color: #6d6d72;
+    width: 80%;
+    float: left;
+    background: white;
+    
+}
+
+.buttons-tab .button.active {
+    z-index: 100;
+    color: #0894ec;
+    border-color: #0894ec;
+    background: #0a140c;
+}
