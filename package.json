@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "light7": "^0.4.3"
+    "light7": "^0.4.3",
+    "moa2": "^2.0.8"
   }
 }
